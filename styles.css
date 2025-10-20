@@ -1,0 +1,24 @@
+:root{
+  --brand-pink: #f47ea4;
+}
+
+/* Use Times New Roman across the site */
+body{font-family: 'Times New Roman', Times, serif;}
+
+/* Subtle gradient overlay for cards */
+.card::before{
+  content: "";
+  position: absolute;
+}
+
+/* Make container elements relative for pseudo elements */
+.card{position: relative; overflow: hidden}
+
+/* small screens tweak */
+@media (max-width: 640px){
+  #hero{padding: 1.25rem}
+}
+
+/* Timer tweaks */
+.timer div { min-width: 52px }
+.timer { backdrop-filter: blur(6px); }
