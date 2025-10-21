@@ -1,39 +1,29 @@
-:root {
+:root{
   --brand-pink: #f47ea4;
 }
 
 /* Use Times New Roman across the site */
-body {
-  font-family: 'Times New Roman', Times, serif;
-}
+body{font-family: 'Times New Roman', Times, serif;}
 
-/* Subtle gradient overlay for cards (optional, can be activated if needed) */
-.card::before {
+/* Subtle gradient overlay for cards */
+.card::before{
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.1), transparent);
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.card:hover::before {
-    opacity: 1;
 }
 
 /* Make container elements relative for pseudo elements */
-.card {
-  position: relative;
-  overflow: hidden;
+.card{position: relative; overflow: hidden}
+
+/* small screens tweak */
+@media (max-width: 640px){
+  #hero{padding: 1.25rem}
+
+  /* YE ADD KARO - Achievement images ko mobile par aek jaisi height dega */
+  #achievements .card img {
+    height: 20rem; /* 320px */
+  }
 }
 
 /* Timer tweaks */
-.timer div {
-  min-width: 50px;
-}
-.timer {
-  backdrop-filter: blur(6px);
-}
+.timer div { min-width: 52px }
+.timer { backdrop-filter: blur(6px); }
