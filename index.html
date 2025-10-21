@@ -2,29 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>B4U Makeup Studio — Coming Soon</title>
   <link rel="icon" type="image/png" href="logo.png">
-  <meta name="description" content="B4U Makeup Studio - Grand Opening on October 24, 2025">
+  <meta name="description" content="B4U Makeup Studio - New Shop Opening on 24 October 2025">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <!-- GSAP for subtle animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-/qK4pN+2r8j6w8h3S2kQ6s1W6Wwqf6LwQ7Yb+2f7zJ4T7Zr9qK1xg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="min-h-screen bg-gradient-to-br from-pink-50 via-pink-100 to-white text-gray-800">
-
-  <div class="absolute top-4 right-4 md:right-12 z-50">
-    <a href="invitation.html" class="btn bg-pink-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-pink-600 transition font-semibold text-sm">Get Your Invitation</a>
+  <!-- Top-right invitation button -->
+  <div class="absolute top-4 right-12 z-50">
+    <a href="invitation.html" class="btn bg-pink-500 text-white px-3 py-1 rounded-full shadow hover:bg-pink-600 transition font-semibold">Download Your Invitation</a>
   </div>
+  <main class="container mx-auto px-6 py-12">
+    <!-- Hero -->
+    <section id="hero" class="bg-white/60 backdrop-blur-md rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 shadow-lg">
+      <div class="flex-1">
+  <div class="text-sm text-pink-600 font-medium mb-2">Komal Sathe's</div>
+  <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">B4U Makeup Studio</h1>
+        <p class="mt-4 text-xl md:text-2xl">✨ New Shop Opening on 24 October 2025 ✨</p>
+        <p class="mt-3 text-sm md:text-base text-gray-600">Our website will launch soon!</p>
 
-  <main class="container mx-auto px-4 sm:px-6 py-12">
-    <section id="hero" class="bg-white/60 backdrop-blur-md rounded-3xl p-6 md:p-12 flex flex-col-reverse md:flex-row items-center gap-8 shadow-lg">
-      <div class="flex-1 text-center md:text-left">
-        <div class="text-sm text-pink-600 font-medium mb-2">Komal Sathe's</div>
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">B4U Makeup Studio</h1>
-        <p class="mt-4 text-xl md:text-2xl">✨ Grand Opening on October 24, 2025 ✨</p>
-        <p class="mt-3 text-sm md:text-base text-gray-600">Our official website is launching soon!</p>
-
-        <div id="countdown" class="mt-6 inline-flex items-center gap-2 sm:gap-3 bg-white/70 px-4 py-3 rounded-full shadow timer">
+        <!-- Countdown timer -->
+        <div id="countdown" class="mt-6 inline-flex items-center gap-3 bg-white/70 px-4 py-3 rounded-full shadow timer">
           <div class="text-center">
             <div class="text-lg font-semibold" id="days">--</div>
             <div class="text-xs text-gray-500">Days</div>
@@ -43,73 +45,78 @@
           </div>
         </div>
         <div class="mt-6">
-          <a href="#" class="inline-block bg-pink-500 text-white px-6 py-3 rounded-full shadow-lg hover:bg-pink-600 transition font-semibold">Notify Me</a>
+          <a href="#" class="inline-block bg-pink-500 text-white px-6 py-3 rounded-full shadow hover:bg-pink-600 transition">Notify Me</a>
         </div>
       </div>
       <div class="w-40 h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 rounded-full overflow-hidden shadow-md flex-shrink-0">
-        <img src="mausi_image.png" alt="Owner: Komal Sathe" class="w-full h-full object-cover">
+        <img src="assets/mausi_image.png" alt="Owner: Mausi" class="w-full h-full object-cover">
       </div>
     </section>
 
-    <section id="about" class="mt-12">
-      <div class="bg-white/60 backdrop-blur-md rounded-2xl p-6 shadow-lg">
-        <h2 class="text-3xl font-bold text-center">About Komal Sathe</h2>
-        <p class="mt-4 text-gray-700 text-center max-w-3xl mx-auto">
-          A professional makeup artist dedicated to making you feel radiant and confident. With years of experience and a passion for beauty, we provide bespoke services that enhance your natural glow. Trusted by brides and celebrities alike.
-        </p>
+    <!-- About -->
+    <section id="about" class="mt-10">
+      <div class="bg-white/60 backdrop-blur-md rounded-2xl p-6 shadow">
+        <h2 class="text-2xl font-semibold">Komal Sathe</h2>
+        <p class="mt-3 text-gray-700">Professional makeup artist with a range of expert services to make you feel radiant and confident.</p>
+        <p class="mt-2 text-gray-600">With years of experience and a passion for beauty, we provide bespoke services that enhance your natural glow. Trusted by brides and celebrities alike.</p>
 
-        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="spec bg-white rounded-xl p-4 shadow hover:shadow-xl transition transform hover:-translate-y-1">
+        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="spec bg-white rounded-xl p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
             <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-600 text-2xl">💄</div>
+              <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-600">💄</div>
               <div>
                 <h3 class="font-medium">Advanced Makeup</h3>
                 <p class="text-sm text-gray-500">Bridal, editorial & HD makeup using premium products.</p>
               </div>
             </div>
           </div>
-          <div class="spec bg-white rounded-xl p-4 shadow hover:shadow-xl transition transform hover:-translate-y-1">
+
+          <div class="spec bg-white rounded-xl p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
             <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-600 text-2xl">💅</div>
+              <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-600">💅</div>
               <div>
-                <h3 class="font-medium">Nail Artistry</h3>
-                <p class="text-sm text-gray-500">Creative nail designs, extensions, and long-lasting finishes.</p>
+                <h3 class="font-medium">Nail Art</h3>
+                <p class="text-sm text-gray-500">Creative nail designs, extensions and long-lasting finishes.</p>
               </div>
             </div>
           </div>
-          <div class="spec bg-white rounded-xl p-4 shadow hover:shadow-xl transition transform hover:-translate-y-1">
+
+          <div class="spec bg-white rounded-xl p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
             <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-600 text-2xl">✂️</div>
+              <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-600">✂️</div>
               <div>
                 <h3 class="font-medium">Haircuts & Styling</h3>
-                <p class="text-sm text-gray-500">Precision cuts, styling, and updos for every occasion.</p>
+                <p class="text-sm text-gray-500">Precision cuts, styling and updos for every occasion.</p>
               </div>
             </div>
           </div>
-          <div class="spec bg-white rounded-xl p-4 shadow hover:shadow-xl transition transform hover:-translate-y-1">
+
+          <div class="spec bg-white rounded-xl p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
             <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-600 text-2xl">✨</div>
+              <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-600">✨</div>
               <div>
                 <h3 class="font-medium">Skin Treatments</h3>
-                <p class="text-sm text-gray-500">Facials, peels, and treatments for a flawless base.</p>
+                <p class="text-sm text-gray-500">Facials, peels and treatments to create a flawless base.</p>
               </div>
             </div>
           </div>
-          <div class="spec bg-white rounded-xl p-4 shadow hover:shadow-xl transition transform hover:-translate-y-1">
+
+          <div class="spec bg-white rounded-xl p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
             <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-600 text-2xl">👰</div>
+              <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-600">👰</div>
               <div>
-                <h3 class="font-medium">Bridal Packages</h3>
+                <h3 class="font-medium">Bridal Makeup</h3>
                 <p class="text-sm text-gray-500">Tailored bridal packages with trial sessions and on-site services.</p>
               </div>
             </div>
           </div>
-          <div class="spec bg-white rounded-xl p-4 shadow hover:shadow-xl transition transform hover:-translate-y-1">
+
+          <div class="spec bg-white rounded-xl p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
             <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-600 text-2xl">🎨</div>
+              <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-600">🎨</div>
               <div>
-                <h3 class="font-medium">Party & Editorial Looks</h3>
-                <p class="text-sm text-gray-500">Bold, creative looks for parties, photoshoots, and events.</p>
+                <h3 class="font-medium">Party & Editorial</h3>
+                <p class="text-sm text-gray-500">Bold, creative looks for parties, shoots, and events.</p>
               </div>
             </div>
           </div>
@@ -117,50 +124,63 @@
       </div>
     </section>
 
-    <section id="achievements" class="mt-12">
-      <h2 class="text-3xl font-bold mb-6 text-center">Our Achievements</h2>
+    <!-- Achievements -->
+    <section id="achievements" class="mt-10">
+      <h2 class="text-2xl font-semibold mb-4">Achievements</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="card bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
-          <img src="achievement1.jpg" alt="Awarded Best Makeup Artist" class="w-full h-80 object-cover rounded-lg">
-          <p class="mt-3 text-center font-medium">Awarded by Celebrity Makeup Artist Rohini Kakade</p>
+        <div class="card bg-white rounded-xl p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
+          <img src="assets/achievement1.jpg" alt="Awarded Best  Artist " class="w-full h-100 object-cover rounded-lg">
+          <p class="mt-3 text-center font-medium">Awarded Best  Artist </p>
         </div>
-        <div class="card bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
-          <img src="achievement2.jpg" alt="Featured in Beauty Magazine" class="w-full h-80 object-cover rounded-lg">
-          <p class="mt-3 text-center font-medium">Certified by a Reputed Beauty Association</p>
+
+        <div class="card bg-white rounded-xl p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
+          <img src="assets/achievement2.jpg" alt="Featured in Beauty Magazine" class="w-full h-70 object-cover rounded-lg">
+          <p class="mt-3 text-center font-medium">Featured in Beauty Magazine</p>
         </div>
-        <div class="card bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
-          <img src="achievement3.jpg" alt="Certified Advanced Makeup Expert" class="w-full h-80 object-cover rounded-lg">
+
+        <div class="card bg-white rounded-xl p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
+          <img src="assets/achievement3.jpg" alt="Certified Advanced Makeup Expert" class="w-full h-70 object-cover rounded-lg">
           <p class="mt-3 text-center font-medium">Certified Advanced Makeup Expert</p>
         </div>
       </div>
     </section>
 
-    <footer class="mt-16 text-center text-gray-600">
-      <p class="font-semibold">© 2025 B4U Makeup Studio</p>
-      <p class="mt-2">
-        <a href="https://www.instagram.com/b4u_makeup_studio_komal/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-pink-500 font-medium gap-2 hover:text-pink-700">
-           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-             <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
-             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-             <path d="M17.5 6.5h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-           </svg>
-           Follow us on Instagram
-        </a>
-      </p>
-      <p class="mt-2 text-sm">
-        <a href="rights.html" class="text-gray-500 hover:text-pink-600">All Rights Reserved</a>
-      </p>
-    </footer>
-  </main>
+<!-- Footer -->
+<!-- Footer -->
+<footer class="mt-12 flex flex-col items-center justify-center text-center text-sm text-gray-600 px-4 pb-6">
+  <p>© 2025 B4U Makeup Studio </p>
+  <p class="mt-1">
+    Follow us on Instagram
+    <a href="https://www.instagram.com/b4u_makeup_studio_komal/" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="inline-flex items-center text-pink-500 font-medium gap-2">
+       <!-- Instagram SVG (small) -->
+       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+         <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+         <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+         <path d="M17.5 6.5h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+       </svg>
+       @b4u_makeup_studio_komal
+    </a>
+  </p>
+  <p class="mt-1">
+    <a href="rights.html" class="text-gray-500 hover:text-pink-600">All Rights Reserved</a>
+  </p>
+</footer>
 
   <script>
     // GSAP subtle entrance
     window.addEventListener('DOMContentLoaded', () => {
-      gsap.from('#hero', { duration: 0.8, y: 30, opacity: 0, ease: 'power2.out' });
-      gsap.from('#about', { duration: 0.8, y: 30, opacity: 0, delay: 0.2, ease: 'power2.out' });
-      gsap.from('#achievements .card', { duration: 0.6, y: 20, opacity: 0, stagger: 0.15, delay: 0.4, ease: 'power2.out' });
+      const tl = gsap.timeline({defaults: {duration: 0.7, ease: 'power2.out'}});
+      tl.from('#hero h1', {y: 20, opacity: 0})
+        .from('#hero p', {y: 12, opacity: 0}, '-=0.4')
+        .from('#hero img', {scale: 0.9, opacity: 0}, '-=0.5')
+        .from('#about', {y: 20, opacity: 0})
+        .from('#achievements .card', {y: 16, opacity: 0, stagger: 0.12});
     });
-
+  </script>
+  <script>
     // Countdown timer to 24 October 2025 (local time)
     (function(){
       const target = new Date('2025-10-24T00:00:00');
@@ -176,7 +196,8 @@
         if (isNaN(diff)) return;
 
         if (diff <= 0) {
-          countdownEl.innerHTML = '<div class="text-pink-600 font-semibold px-4">We Are Now Open!</div>';
+          // Opened
+          countdownEl.innerHTML = '<div class="text-pink-600 font-semibold">Now Open!</div>';
           clearInterval(timer);
           return;
         }
@@ -195,8 +216,8 @@
         secondsEl.textContent = String(seconds).padStart(2, '0');
       }
 
-      const timer = setInterval(update, 1000);
       update();
+      const timer = setInterval(update, 1000);
     })();
   </script>
 </body>
