@@ -27,3 +27,24 @@ body{font-family: 'Times New Roman', Times, serif;}
 /* Timer tweaks */
 .timer div { min-width: 52px }
 .timer { backdrop-filter: blur(6px); }
+
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  section {
+    margin: 1rem 0;
+  }
+}
