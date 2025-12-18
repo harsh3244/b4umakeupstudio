@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>B4U Makeup Studio</title>
+  <link rel="icon" type="image/png" href="B4U logo.png">
+  <meta name="description" content="B4U Makeup Studio - New Shop Opening on 24 October 2025">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- GSAP for subtle animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-/qK4pN+2r8j6w8h3S2kQ6s1W6Wwqf6LwQ7Yb+2f7zJ4T7Zr9qK1xg==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-pink-50 via-pink-100 to-white text-gray-800">
+  <!-- Main Container -->
+  <main class="container mx-auto px-4 py-8 max-w-7xl">
+    <!-- Hero Section -->
+    <section id="hero"
+      class="bg-white/60 backdrop-blur-md rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 shadow-lg">
+      <!-- Text Content -->
+      <div class="flex-1 space-y-4">
+        <div class="text-sm text-pink-600 font-medium mb-2">Komal Sathe's</div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">B4U Makeup Studio</h1>
+        <p class="mt-4 text-xl md:text-2xl">✨ New Shop Opened on 24 October 2025 ✨</p>
+        <h2 class="mt-3 text-sm md:text-base text-gray-600"> <b>Our website will launch on the Occasion Of Jija's
+            Birthday !</b></h2>
+        <h2><b>Website Launch Countdown .... !</b></h2>
+
+        <!-- Countdown timer -->
+        <div id="countdown" class="mt-6 inline-flex items-center gap-3 bg-white/70 px-4 py-3 rounded-full shadow timer">
+          <div class="text-center">
+            <div class="text-lg font-semibold" id="days">--</div>
+            <div class="text-xs text-gray-500">Days</div>
+          </div>
+          <div class="text-center">
+            <div class="text-lg font-semibold" id="hours">--</div>
+            <div class="text-xs text-gray-500">Hours</div>
+          </div>
+          <div class="text-center">
+            <div class="text-lg font-semibold" id="minutes">--</div>
+            <div class="text-xs text-gray-500">Minutes</div>
+          </div>
+          <div class="text-center">
+            <div class="text-lg font-semibold" id="seconds">--</div>
+            <div class="text-xs text-gray-500">Seconds</div>
+          </div>
+        </div>
+        <!--Live opening buttons upper side-->
+        <h2>Shops Opening Ceremony.</h2>
+        <!-- Action Button -->
+        <div class="mt-6">
+          <a href="https://www.youtube.com/live/zCCzFga_Upo?feature=shared" target="_blank"
+            class="inline-block bg-pink-500 text-white px-6 py-3 rounded-full shadow hover:bg-pink-600 transition">
+            Live Opening
+          </a>
+        </div>
+      </div>
+
+      <!-- Owner Image -->
+
+      <div
+        class="mt-8 md:mt-0 w-40 sm:w-48 md:w-56 lg:w-72 aspect-square rounded-full overflow-hidden shadow-md flex-shrink-0 mx-auto md:mx-0 md:ml-8 ring-2 ring-pink-300">
+        <img src="mausi_image.jpg" alt="Owner: Komal Sathe" class="w-full h-full object-cover object-center" />
+      </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="mt-10">
+      <div class="bg-white/60 backdrop-blur-md rounded-2xl p-6 shadow">
+        <h2 class="text-2xl font-semibold">Komal Sathe</h2>
+        <p class="mt-3 text-gray-700">Professional makeup artist with a range of expert services to make you feel
+          radiant and confident.</p>
+        <p class="mt-2 text-gray-600">With years of experience and a passion for beauty, we provide bespoke services
+          that enhance your natural glow. Trusted by brides and celebrities alike.</p>
+
+        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="spec bg-white rounded-xl p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-600">💄</div>
+              <div>
+                <h3 class="font-medium">Advanced Makeup</h3>
+                <p class="text-sm text-gray-500">Bridal, editorial & HD makeup using premium products.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="spec bg-white rounded-xl p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-600">💅</div>
+              <div>
+                <h3 class="font-medium">Nail Art</h3>
+                <p class="text-sm text-gray-500">Creative nail designs, extensions and long-lasting finishes.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="spec bg-white rounded-xl p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-600">✂️</div>
+              <div>
+                <h3 class="font-medium">Haircuts & Styling</h3>
+                <p class="text-sm text-gray-500">Precision cuts, styling and updos for every occasion.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="spec bg-white rounded-xl p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-600">✨</div>
+              <div>
+                <h3 class="font-medium">Skin Treatments</h3>
+                <p class="text-sm text-gray-500">Facials, peels and treatments to create a flawless base.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="spec bg-white rounded-xl p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-600">👰</div>
+              <div>
+                <h3 class="font-medium">Bridal Makeup</h3>
+                <p class="text-sm text-gray-500">Tailored bridal packages with trial sessions and on-site services.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="spec bg-white rounded-xl p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-pink-600">🎨</div>
+              <div>
+                <h3 class="font-medium">Party & Editorial</h3>
+                <p class="text-sm text-gray-500">Bold, creative looks for parties, shoots, and events.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="mt-10">
+      <div class="bg-white/60 backdrop-blur-md rounded-2xl p-6 shadow">
+        <h2 class="text-3xl font-semibold mb-6 text-center">Our Achievements</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card bg-white rounded-xl p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
+            <img src="achievement1.jpg" alt="Awarded Best  Artist " class="w-full h-64 md:h-72 object-cover rounded-lg">
+            <p class="mt-3 text-center font-medium">Awarded Best Artist </p>
+          </div>
+
+          <div class="card bg-white rounded-xl p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
+            <img src="achievement2.jpg" alt="Featured in Beauty Magazine" class="w-full h-64 md:h-72 object-cover rounded-lg">
+            <p class="mt-3 text-center font-medium">Featured in Beauty Magazine</p>
+          </div>
+
+          <div class="card bg-white rounded-xl p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1">
+            <img src="achievement3.jpg" alt="Certified Advanced Makeup Expert"
+              class="w-full h-64 md:h-72 object-cover rounded-lg">
+            <p class="mt-3 text-center font-medium">Certified Advanced Makeup Expert</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-12 flex flex-col items-center justify-center text-center text-sm text-gray-600 px-4 pb-6">
+    <p>© 2025 B4U Makeup Studio </p>
+    <p class="mt-1">
+      <a href="rights.html" class="text-gray-500 hover:text-pink-600">All Rights Reserved</a>
+    </p>
+     <p class="mt-1"> Desinged by 
+      <a href="https://www.linkedin.com/in/harshvardhan-hajgude-33b8ab283" class="text-gray-900 hover:text-orange-600"> <b>Harshvardhan Hajgude</b></a>
+    </p>
+    <p class="mt-4 font-semibold">CONNECT WITH US ON</p>
+
+    <!-- Social Media Links -->
+    <div class="mt-4 flex gap-4 justify-center items-center">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/b4u_makeup_studio_komal/" target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center justify-center w-8 h-8 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition transform hover:scale-110"
+        aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.266.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z" />
+        </svg>
+      </a>
+
+      <!-- YouTube -->
+      <a href="https://youtube.com/@komalsathe3672?si=1wbqkLimN8tKMW9u" target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center justify-center w-8 h-8 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition transform hover:scale-110"
+        aria-label="YouTube">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    // GSAP subtle entrance
+    window.addEventListener('DOMContentLoaded', () => {
+      const tl = gsap.timeline({ defaults: { duration: 0.7, ease: 'power2.out' } });
+      tl.from('#hero h1', { y: 20, opacity: 0 })
+        .from('#hero p', { y: 12, opacity: 0 }, '-=0.4')
+        .from('#hero img', { scale: 0.9, opacity: 0 }, '-=0.5')
+        .from('#about', { y: 20, opacity: 0 })
+        .from('#achievements .card', { y: 16, opacity: 0, stagger: 0.12 });
+    });
+  </script>
+  <script>
+    // Countdown timer to 24 October 2025 (local time)
+    (function () {
+      const target = new Date('2026-02-21T00:00:00');
+      const daysEl = document.getElementById('days');
+      const hoursEl = document.getElementById('hours');
+      const minutesEl = document.getElementById('minutes');
+      const secondsEl = document.getElementById('seconds');
+      const countdownEl = document.getElementById('countdown');
+
+      function update() {
+        const now = new Date();
+        let diff = target - now;
+        if (isNaN(diff)) return;
+
+        if (diff <= 0) {
+          // Opened
+          countdownEl.innerHTML = '<div class="text-pink-600 font-semibold">Now Open!</div>';
+          clearInterval(timer);
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        diff -= days * (1000 * 60 * 60 * 24);
+        const hours = Math.floor(diff / (1000 * 60 * 60));
+        diff -= hours * (1000 * 60 * 60);
+        const minutes = Math.floor(diff / (1000 * 60));
+        diff -= minutes * (1000 * 60);
+        const seconds = Math.floor(diff / 1000);
+
+        daysEl.textContent = String(days).padStart(2, '0');
+        hoursEl.textContent = String(hours).padStart(2, '0');
+        minutesEl.textContent = String(minutes).padStart(2, '0');
+        secondsEl.textContent = String(seconds).padStart(2, '0');
+      }
+
+      update();
+      const timer = setInterval(update, 1000);
+    })();
+  </script>
+</body>
+
+</html>
